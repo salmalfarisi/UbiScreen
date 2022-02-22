@@ -1,0 +1,168 @@
+@media only screen and (max-width: 576px) {
+	.dropdown-gone {
+		display: none;
+	}
+	#sidebar{
+		display:none;
+	}
+	
+	#bottomSidebar{
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+	.dropdown-gone {
+		display: block;
+	}
+	#sidebar{
+		display:none;
+	}
+	#bottomSidebar{
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	#sidebar{
+		display:none;
+	}
+	#bottomSidebar{
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1400px) {
+	#sidebar{
+		display:block;
+	}
+	#bottomSidebar{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	#sidebar{
+		display:block;
+	}
+	#bottomSidebar{
+		display:none;
+	}
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+
+.text-orange{
+	color:#FF6F02;
+}
+
+a.text-orange:hover{
+	color:#6c757d;
+}
+
+.background-orange{
+	background-color:#FF6F02;
+}
+
+.border-orange{
+	border-style:solid;
+	border-color:#FF6F02; 
+	border-width:3px;
+}
+
+.button-custom {
+  background-color: #FFFFFF;
+  color: #6c757d;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight:bold;
+}
+
+.button-custom:hover{
+	color: #BAACA2;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-width:1px;
+}
+
+.btn-outline-orange {
+    color: #FF6F02;
+    border-color: #FF6F02;
+}
+
+.btn-outline-orange:hover {
+    color: #FFFFFF;
+    border-color: #FF6F02;
+	background-color: #FF6F02;
+}
+
+.button-custom-active {
+  background-color: #FFFFFF;
+  border-width: 3px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  color: #FF6F02;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight:bold;
+}
+
+.button-custom-active:hover{
+	color:#FF6F02;
+}
+
+.col > .mx-4.px-4.my-1.py-1:hover{
+	background-color:#BAACA2;
+}
+
+.col > .mx-4.px-4.my-1.py-1.active:hover{
+	background-color:#FF6F02;
+}
+
+/* for carousel */
+.demo {
+    width:100%;
+}
+.demo > ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.demo > ul > li {
+    display: block;
+    text-align: center;
+    margin-right: 6px;
+    cursor:pointer;
+}
+
+.demo > ul > li > img {
+    display: block;
+	text-align: center;
+	height: auto;
+    max-width: 100%;
+}
+
+#bottomSidebar {
+  position: fixed;
+  bottom: 0px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
